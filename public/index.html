@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="author" content="Gregory LINFORD">
+  <title>Color MemoryGame</title>
+  <link rel="stylesheet" href="css/color-memory-game.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <div class="container">
+		  
+		   <!-- Static navbar -->
+      <div class="navbar navbar-default" style="margin-top: 10px;">
+        <div class="pull-left">
+			<img src="/img/logo.png" alt="Color MemoryGame Logo" style="width: 50%;">
+		</div> 
+		 <div class="" style="font-size: 20pt;">
+			<span class="score-title">Score:
+				<span id="score-count">0</span>
+			</span>
+			<span class="score-title pull-right"><a href="/high">Highscores</a></span>
+		</div> 
+      </div>
+		
+		<div class="right-sidebar">
+       
+            <div class="game-info">
+       
+            </div>
+            <div id="highscores" class="">
+               
+            </div>
+
+            <div class="restart-block">
+                <button id="restart-button" class="color-game-button">Start Over</button>
+            </div>
+        </div>
+		  
+        <div id="color-memory-game"></div>
+        
+      </div>
+    </div>
+  </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   
+  <script src="js/color-memory-game.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script>
+    (function(){
+      var thegame = new MemoryGame();
+    })();
+  </script>
+</body>
+</html>
